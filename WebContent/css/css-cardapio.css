@@ -1,0 +1,249 @@
+#content {
+	overflow: hidden;
+	position: relative;
+}
+
+.page-title {
+	padding: 6rem 0 7rem;
+	position: relative;
+}
+
+.page-title h1 {
+	font-size: 5.5rem;
+}
+
+.bg-light {
+	background-color: #f3f4f4;
+}
+
+"push-lg-4"
+
+*nao sei ainda o que é
+::selection {
+    background: #ddae71;
+    color: #fff;
+}
+
+.page-content {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+}
+
+.nav-menu {
+	flex-direction: column;
+	font-family: "Oswald",sans-serif;
+	margin-bottom: 2rem;
+	padding: 1.5rem 2.5rem;
+	text-transform: uppercase;
+	webkit-flex-direction: column;
+}
+
+.nav-menu li a {
+	display: block;
+	font-size: 1.1rem;
+	padding: 0.5rem 0;
+}
+
+.bg-dark {
+	background-color: #282b2e !important;
+}
+
+.dark {
+	color: #fff;
+}
+
+"push-md-1"
+
+.menu-category {
+	margin-bottom: 2rem;
+}
+
+.menu-category .menu-category-title {
+	background-color: #282b2e;
+	color: #fff;
+	height: 35vh;
+	min-height: 160px;
+	padding: 3rem;
+	position: relative;
+}
+
+.bg-image>img {
+	display: none;
+}
+
+.bg-image+* {
+	position: relative;
+}
+
+.menu-category .menu-category-title .bg-image:after {
+	background-image: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+	bottom: 0;
+	content: ' ';
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.menu-category .menu-category-title .title {
+	bottom: 3rem;
+	font-size: 5rem;
+	left: 4rem;
+	margin-bottom: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+.menu-category .menu-category-title.collapse-toggle {
+	cursor: pointer;
+	height: 25vh;
+	moz-transition: all .25s ease-out;
+	o-transition: all .25s ease-out;
+	transition: all 0.25s ease-out;
+	webkit-transition: all .25s ease-out;
+}
+
+.menu-category .menu-category-title.collapse-toggle:after {
+	bottom: 3rem;
+	content: "\e64b";
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	font-family: 'themify';
+	font-size: 3rem;
+	moz-transition: all .25s ease-out;
+	opacity: .5;
+	o-transition: all .25s ease-out;
+	position: absolute;
+	right: 3rem;
+	transition: all 0.25s ease-out;
+	webkit-transition: all .25s ease-out;
+	z-index: 2;
+}
+
+.menu-category .menu-category-title.collapse-toggle[aria-expanded="true"] {
+	height: 35vh;
+}
+
+.menu-category .menu-category-title.collapse-toggle[aria-expanded="true"]:after {
+	moz-transform: rotateX(180deg);
+	ms-transform: rotateX(180deg);
+	o-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+	webkit-transform: rotateX(180deg);
+}
+
+.menu-category .menu-category-content {
+	background-color: #fff;
+	border: 1px solid #e0e0e0;
+}
+
+.menu-category .menu-category-content.padded {
+	padding: 15px;
+}
+
+.row.gutters-sm {
+	margin-left: -7.5px;
+	margin-right: -7.5px;
+}
+
+.row.gutters-sm>*[class^='col'],.row.gutters-sm>*[class*=' col'] {
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+}
+
+/* grid-navigation */
+.menu-grid-item {
+	line-height: 1.2;
+	margin-bottom: 1.5rem;
+}
+
+.menu-grid-item:not(:last-child) {
+	border-bottom: 1px solid #e0e0e0;
+}
+/* grid-navigation */
+
+.text-muted {
+	color: #a4a7a9 !important;
+}
+
+.text-sm {
+	font-size: 0.95rem;
+}
+
+.text-md {
+	font-size: 1.1rem;
+}
+
+
+
+/* list-navigation */
+.menu-list-item {
+	line-height: 1.2;
+	padding: 1.25rem 1.5rem;
+}
+.menu-list-item:not(:last-child) {
+	border-bottom: 1px solid #e0e0e0;
+}
+@media only screen and (max-width: 575px) {
+	.menu-list-item {
+		padding: 1rem;
+	}
+}
+/* //list-navigation */
+
+
+
+
+
+@media only screen and (max-width: 1500px) {
+	.page-title	{
+		padding: 4rem 0 5rem;
+	}
+	.page-title h1 {
+		font-size: 4.75rem;
+	}
+	.menu-category .menu-category-title .title {
+		font-size: 4.5rem;
+	}
+	.menu-category .menu-category-title.collapse-toggle:after {
+		bottom: 2.5rem;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	#content {
+		margin-top: 60px;
+	}
+	.page-title h1 {
+		font-size: 4rem;
+	}
+	.stick-to-content {
+		position: relative !important;
+		top: 0 !important;
+	}
+	.menu-category .menu-category-title {
+		min-height: 100px;
+	}
+	.menu-category .menu-category-title .title {
+		bottom: 2rem;
+		font-size: 4rem;
+		left: 3rem;
+	}
+	.menu-category .menu-category-title.collapse-toggle:after {
+		bottom: 2rem;
+		font-size: 2rem;
+		right: 2rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.menu-category .menu-category-title .title {
+		font-size: 3rem;
+		left: 2rem;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.page-title h1 {
+		font-size: 3.5rem;
+	}
+}
